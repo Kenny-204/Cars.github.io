@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: none;
+
+}
+
+:root {
+    --blue: #0cafe1;
+    --grey: #f4f7fe;
+    --gray: #525252;
+    --lbl: #cdfbff;
+    --pink: #fffcf7;
+    --darkblue: #2b5061;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Navbar */
+li,
+a,
+.nav--button {
+    font-size: 1rem;
+    font-weight: 550;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    max-width: 100%;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav {
+    list-style: none;
+
+}
+
+.nav li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav li a,
+.nav li a:active {
+
+    color: var(--gray);
+    transition: all 0.3s ease 0s;
+}
+
+
+.nav li a:hover {
+    color: blue
+}
+
+
+.nav--button {
+    padding: 13px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--blue);
+    color: var(--grey);
+}
+
+/* Navbar end */
+/* The dropdown */
+.dropdown--menu {
+    display: none;
+    height: 0;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 250px;
+    background: grey;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 1rem;
+    font-weight: 550;
+    text-decoration: none;
+    list-style: none;
+    /* display: inline-block; */
+    padding: 10px 20px;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown--menu li {
+    padding: 7px;
+}
+
+.dropdown--menu.open {
+    height: 350px;
+    display: block;
+}
+
+/* dropdown end */
+/* media queries */
+@media all and (max-width:780px) {
+
+    .nav,
+    .ff {
+        display: none;
+    }
+}
+
+@media all and (min-width:780px) {
+    .toggle_Btn {
+        display: none;
+    }
+}
+
+@media all and (max-width:1110px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10px;
+        background-color: white;
+        max-width: 100%;
+    }
+
+    .nav li {
+        display: inline-block;
+        padding: 0 10px;
+    }
+
+}
+
+@media all and (max-width:918px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 5 px;
+        /* background-color: red; */
+
+
+    }
+
+    .nav li {
+        display: inline-block;
+        padding: 0 3px;
+    }
+
+    .nav--button {
+        padding: 13px 5px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        /* background-color: green; */
+        color: var(--grey);
+    }
+
+}
+
+/* media query end */
+/* Section--1 */
+.section--1 {
+    background-color: var(--grey);
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 30px 0px 30px 40px;
+    position: relative;
+    z-index: -1;
+
+}
+
+.img--label {
+    font-size: 3.438rem;
+    font-family: sans-serif;
+}
+
+.l {
+    font-size: 1.875rem;
+    margin: 20px 0 30px 0;
+}
+
+.section--1 p img {
+    position: absolute;
+    top: 85px;
+    left: 195px;
+}
+
+.cap {
+    font-weight: 550;
+    color: var(--gray);
+    padding: 20px 0 0 5px;
+    margin-bottom: -12px;
+
+}
+
+.store--btn {
+    margin-top: 40px;
+
+}
+
+@media all and (min-width:1180px) {
+    .img--label {
+        font-size: 50px;
+        font-family: sans-serif;
+    }
+
+    .l {
+        font-size: 25px;
+        margin: 20px 0 30px 0;
+    }
+
+    .store--btn {
+        margin-top: 40px;
+        width: 170px;
+    }
+
+    .cap {
+        font-size: 15px;
+    }
+
+    /* .section--1 p img {
+        position: absolute;
+        top: 85px;
+        left: 170px;
+        width: 10px;
+    } */
+}
+
+@media all and (max-width:1178px) {
+    .img--label {
+        font-size: 35px;
+        font-family: sans-serif;
+    }
+}
+
+@media all and (max-width:611px) {
+    .img--label {
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+
+    .l {
+        font-size: 15px;
+        margin: 20px 0 10px 0;
+    }
+
+    .store--btn {
+        margin-top: 40px;
+        width: 1px;
+    }
+
+    .cap {
+        font-size: 10px;
+    }
+
+    .section--1 p img {
+        position: absolute;
+        top: 85px;
+        left: 120px;
+        width: 100px;
+    }
+}
+
+@media all and (max-width:320px) {
+    .img--label {
+        font-size: 15px;
+        font-family: sans-serif;
+    }
+
+}
+
+
+/* Section--1 end */

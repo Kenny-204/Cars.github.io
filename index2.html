@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="../cars/fontawesome/css/all.css">
+    <link rel="shortcut icon" href="img/favicon2.png" type="image/x-icon">
+    <title>Cars</title>
+</head>
+
+<body>
+    <header>
+
+        <img class="logo" src="img/logo.png" alt="logo">
+        <nav>
+            <ul class="nav">
+                <li><a href="#">Rent a Car</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">Yatch Rental</a></li>
+                <li><a href="#">Promotion</a></li>
+                <li><a href="#">Contact Us</a></li>
+
+            </ul>
+        </nav>
+        <div>
+            <div class="ff">
+                <a href="#" style="padding:10px; color: var(--gray);">Login</a>
+                <a href="#" class="cta"><button class="nav--button">Get Started &rightarrow;</button></a>
+            </div>
+            <div class="toggle_Btn">
+                <i class=" fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown--menu ">
+            <li><a href="#">Rent a Car</a></li>
+            <li><a href="#">Brands</a></li>
+            <li><a href="#">Yatch Rental</a></li>
+            <li><a href="#">Promotion</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li> <a href="#" style="padding:10px; color: var(--gray);">Login</a></li>
+            <li> <a href="#" class="cta"><button class="nav--button">Get Started &rightarrow;</button></a></li>
+        </div>
+
+    </header>
+
+    <section class="section--1 flex"
+        style="background-image: url('img/sidecar.png');background-repeat: no-repeat; background-position: right;background-size: 40%;">
+        <div style="padding-top: 40px;">
+            <p class="l">Rent a Car in <img src="img/dubai.png"> </p>
+            <h1 class="img--label">Find your dreams <br> Car within a minute</h1>
+            <p class="cap">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <p class="cap"> Modi ipsum est quae aut exercitationem, suscipit blanditiis.</p>
+            <!-- <div class="flex store--btn">
+                <a href="#"><img src="img/appstore.png" width="200px" style="margin-right: 20px;"></a>
+                <a href="#"><img src="img/playstore.png" width="200px"></a>
+            </div> -->
+        </div>
+        <!-- <img src="img/sidecar.webp" alt="car"> -->
+    </section>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_Btn')
+        const toggleBtnIcon = document.querySelector('.toggle_Btn i')
+        const dropdownMenu = document.querySelector('.dropdown--menu')
+
+        toggleBtn.addEventListener('click', function () {
+            dropdownMenu.classList.toggle('open')
+            const isOpen = dropdownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+        })
+    </script>
+</body>
+
+</html>
