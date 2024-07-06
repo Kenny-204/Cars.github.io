@@ -81,23 +81,26 @@ header {
     height: 0;
     position: absolute;
     right: 2rem;
+    color:  var(--gray);
     top: 60px;
     width: 250px;
-    background: grey;
+    background:  #f4f7fe;
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
     font-size: 1rem;
     font-weight: 550;
     text-decoration: none;
+    box-shadow: 1px 1px 13px #d7e3ff;
     list-style: none;
     /* display: inline-block; */
     padding: 10px 20px;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.dropdown--menu li {
+.dropdown--menu li,.dropdown--menu a {
     padding: 7px;
+    color:  var(--gray);
 }
 
 .dropdown--menu.open {
@@ -461,16 +464,97 @@ header {
 
 
     .arrange span {
-        font-size:1.875rem;
+        font-size:1.675rem;
         font-weight: 550;
         padding: 0 7px 7px 7px;
     }
 
     .arrange p {
         color: var(--gray);
-        font-size:0.938rem;
+        font-size:0.638rem;
         font-weight: 550;
     }
 }
 
 /* horibar 2 end */
+.find-service {
+    padding: 30px;
+}
+
+.find-service p {
+    font-weight: 550;
+    font-size: 20px;
+    color: black;
+}
+
+.find-service a {
+    font-size: 20px;
+    font-weight: lighter;
+    margin-left: 10px;
+    color: var(--blue);
+}
+
+/* next section */
+.img-cont {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 50px;
+    text-align: center;
+
+
+}
+
+.image-container {
+    padding: 50px;
+}
+
+.car-labels {
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+
+}
+
+.car-label2 {
+    color: #858585;
+    padding: 10px;
+}
+
+.seemore {
+    background-color: white;
+    color: var(--blue);
+    border: 0.5px solid var(--blue);
+    padding: 7px 40px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-left: 45%;
+    margin-bottom: 10%;
+}
+
+.book-car {
+    background-color: var(--pink);
+    text-align: center;
+    padding: 40px;
+}
+
+.book-car h1 {
+    padding-bottom: 10px;
+}
+
+.p-lorem {
+    padding: 10px;
+    color: var(--gray);
+}
+
+.car-description button {
+    background-color: inherit;
+    color: var(--gray);
+    border: 0.5px var(--gray) solid;
+    padding: 5px 40px;
+    margin-right: 10px;
+    border-radius: 2px;
+}
+
+.card-container {
+    display: flex;
+}
